@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <!-- A tag <head> contém metadados da página, como título, descrição para SEO, links, configurações de responsividade. Essas informações não aparecem visualmente,
+mas são essenciais para buscadores, navegadores e o funcionamento do site. Alem da função <style> e o CSS global -->
     <title>Faculdade Exemplo</title>
     <meta charset="UTF-8">
     <meta name="description" content="Aprenda como otimizar HTML para SEO.">
@@ -65,12 +67,13 @@
 <body>
 
     <header>
+        <!-- A tag <header> define o cabeçalho da página, incluindo o nome da instituição e o slogan. -->
         <h1 style="text-align: center;">Faculdade Exemplo</h1>
         <p style="text-align: center;">Transformando conhecimento em futuro</p>
-        <!-- Comentário 1 (SEO): Ausência de meta description prejudica a indexação e o CTR nos buscadores -->
     </header>
 
     <nav aria-label="Breadcrumb" style="text-align: center;">
+        <!-- A tag <nav> define a seção de navegação, com links para diferentes seções do site. O atributo aria-label melhora a acessibilidade. -->
         <a href="#quem_somos">Sobre a faculdade</a>
         <a href="#cursos">Cursos de graduação</a>
         <a href="#infraestrutura">Infraestrutura</a>
@@ -78,20 +81,19 @@
         <a href="#noticias">Notícias recentes</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#contato">contatos</a>
-
-        <!-- Comentário 2 (SEO): Links usam âncoras genéricas; textos âncora otimizados ajudam no ranqueamento -->
     </nav>
 
     <div class="banner">
+        <!-- A div com a classe "banner" cria um banner visual com o título principal da página. -->
         <h2>Bem-vindo à nossa instituição</h2>
     </div>
 
     <main>
         <section id="quem_somos">
+            <!-- a <section> ""-->
             <h2>Quem Somos</h2>
             <p>A <strong>Faculdade Exemplo</strong> é uma <strong>instituição de ensino superior</strong> localizada em Cidade Exemplo, dedicada à formação de profissionais qualificados por meio de cursos de <strong>graduação</strong> e <strong>educação universitária</strong>                de excelência.</p>
             <p>Nossa missão é oferecer <strong>educação superior</strong> de qualidade, promovendo o desenvolvimento acadêmico e preparando nossos alunos para os desafios do mercado de trabalho.</p>
-            <!-- Agora o conteúdo utiliza palavras-chave estratégicas para SEO -->
         </section>
 
         <section id="cursos">
@@ -103,7 +105,6 @@
                 <li><a href="Engenharia_civil.html">Engenharia Civil</a></li>
                 <li><a href="Medicina.html">Medicina</a></li>
             </ul>
-            <!-- Comentário 4 (SEO): Lista de cursos não possui links internos, reduzindo a interligação e relevância interna -->
         </section>
 
         <section id="infraestrutura">
@@ -111,7 +112,6 @@
             <img src="campus.jpg" alt="Foto do campus da Faculdade Exemplo, com bibliotecas, laboratorios modernos e áreas de convivência" width="250px">
             <p>Nosso campus conta com biblioteca, laboratórios modernos e áreas de convivência.</p>
             <p>Estamos sempre investindo em tecnologia e inovação.</p>
-            <!-- Comentário 5 (SEO): Imagem sem atributo alt não contribui para SEO em buscas por imagens -->
         </section>
 
         <section id="corpo_docente">
@@ -141,7 +141,6 @@
                 <h3>Parceria Internacional</h3>
                 <p>Firmamos acordo com universidades estrangeiras para intercâmbio de alunos.</p>
             </article>
-            <!-- Comentário 7 (SEO): Notícias não possuem dados estruturados (schema.org) para melhorar o destaque nos resultados de busca -->
         </section>
 
         <script type="application/ld+json">
@@ -179,7 +178,6 @@
                 <p>"Professores qualificados e ótima estrutura. Recomendo a todos."</p>
                 <footer>- Aluna</footer>
             </blockquote>
-            <!-- Comentário 8 (SEO): Depoimentos agora possuem dados estruturados (review schema) -->
         </section>
 
         <script type="application/ld+json">
@@ -222,7 +220,6 @@
                 <textarea id="mensagem" name="mensagem" rows="5" cols="30" required></textarea><br><br>
                 <input type="submit" value="Enviar">
             </form>
-            <!-- Agora o formulário direciona para uma página de obrigado indexável -->
         </section>
     </main>
 
@@ -237,7 +234,7 @@
             <a href="https://instagram.com/faculdadeexemplo" target="_blank" rel="noopener" title="Instagram da Faculdade Exemplo">Instagram</a> |
             <a href="https://linkedin.com/school/faculdadeexemplo" target="_blank" rel="noopener" title="LinkedIn da Faculdade Exemplo">LinkedIn</a>
         </nav>
-        <!-- Rodapé agora contém links para sitemap, política de privacidade e redes sociais otimizadas -->
+
     </footer>
 
 </body>
