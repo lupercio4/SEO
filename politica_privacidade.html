@@ -17,8 +17,36 @@
         header {
             background: #004080;
             color: white;
-            padding: 20px;
+            padding: 20px 0 10px 0;
             text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            color: #cfe2ff;
+        }
+        
+        nav {
+            background: #0066cc;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
         }
         
         main {
@@ -28,19 +56,22 @@
             background: white;
             border: 1px solid #ddd;
             margin-top: 30px;
+            border-radius: 6px;
         }
         
-        h1,
         h2 {
             color: #004080;
+            margin-top: 0;
         }
         
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        p,
+        li {
+            color: #222;
+            font-size: 1rem;
+        }
+        
+        ul {
+            margin-bottom: 20px;
         }
         
         a {
@@ -51,29 +82,61 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        .voltar {
+            display: inline-block;
+            margin-top: 25px;
+            color: #004080;
+            font-weight: bold;
+            background: #e6f0fa;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        
+        .voltar:hover {
+            background: #cfe2ff;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>Faculdade Exemplo</h1>
+        <p>Transformando conhecimento em futuro</p>
     </header>
+    <nav>
+        <a href="SEO.html">Início</a>
+        <a href="administracao.html">Administração</a>
+        <a href="ciencia_computação.html">Ciência da Computação</a>
+        <a href="direito.html">Direito</a>
+        <a href="Engenharia_civil.html">Engenharia Civil</a>
+        <a href="Medicina.html">Medicina</a>
+        <a href="sitemap.html">Sitemap</a>
+    </nav>
     <main>
         <h2>Política de Privacidade</h2>
         <p>Esta página explica como a Faculdade Exemplo coleta, utiliza e protege suas informações pessoais.</p>
-        <h3>Coleta de Dados</h3>
-        <p>Coletamos informações fornecidas por você através de formulários de contato e navegação em nosso site.</p>
-        <h3>Uso das Informações</h3>
-        <p>Os dados são utilizados apenas para fins institucionais, como responder dúvidas e melhorar nossos serviços.</p>
-        <h3>Compartilhamento</h3>
-        <p>Não compartilhamos suas informações com terceiros, exceto quando exigido por lei.</p>
-        <h3>Seus Direitos</h3>
-        <p>Você pode solicitar a atualização ou remoção de seus dados a qualquer momento, entrando em contato conosco.</p>
+        <ul>
+            <li><strong>Coleta de Dados:</strong> Coletamos informações fornecidas por você através de formulários de contato e navegação em nosso site.</li>
+            <li><strong>Uso das Informações:</strong> Os dados são utilizados apenas para fins institucionais, como responder dúvidas e melhorar nossos serviços.</li>
+            <li><strong>Compartilhamento:</strong> Não compartilhamos suas informações com terceiros, exceto quando exigido por lei.</li>
+            <li><strong>Seus Direitos:</strong> Você pode solicitar a atualização ou remoção de seus dados a qualquer momento, entrando em contato conosco.</li>
+        </ul>
         <p>Para mais informações, envie um e-mail para <a href="mailto:contato@faculdadeexemplo.com">contato@faculdadeexemplo.com</a>.</p>
-        <a href="SEO.html">Voltar para o site</a>
+        <a class="voltar" href="SEO.html">&larr; Voltar para o site</a>
     </main>
     <footer>
         <p>&copy; 2025 Faculdade Exemplo - Todos os direitos reservados</p>
+        <p>Endereço: Rua da Educação, 123 - Cidade Exemplo | Telefone: (00) 1234-5678</p>
     </footer>
 </body>
 

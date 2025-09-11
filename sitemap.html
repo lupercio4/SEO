@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sitemap - Faculdade Exemplo</title>
+    <title>Mapa do Site - Faculdade Exemplo</title>
     <meta name="description" content="Mapa do site da Faculdade Exemplo. Encontre todas as páginas e seções importantes.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -17,8 +17,36 @@
         header {
             background: #004080;
             color: white;
-            padding: 20px;
+            padding: 20px 0 10px 0;
             text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            color: #cfe2ff;
+        }
+        
+        nav {
+            background: #0066cc;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
         }
         
         main {
@@ -28,11 +56,12 @@
             background: white;
             border: 1px solid #ddd;
             margin-top: 30px;
+            border-radius: 6px;
         }
         
-        h1,
         h2 {
             color: #004080;
+            margin-top: 0;
         }
         
         ul {
@@ -53,6 +82,21 @@
             text-decoration: underline;
         }
         
+        .voltar {
+            display: inline-block;
+            margin-top: 25px;
+            color: #004080;
+            font-weight: bold;
+            background: #e6f0fa;
+            padding: 8px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        
+        .voltar:hover {
+            background: #cfe2ff;
+        }
+        
         footer {
             background: #222;
             color: white;
@@ -66,9 +110,19 @@
 <body>
     <header>
         <h1>Faculdade Exemplo</h1>
+        <p>Transformando conhecimento em futuro</p>
     </header>
+    <nav>
+        <a href="SEO.html">Início</a>
+        <a href="administracao.html">Administração</a>
+        <a href="ciencia_computação.html">Ciência da Computação</a>
+        <a href="direito.html">Direito</a>
+        <a href="Engenharia_civil.html">Engenharia Civil</a>
+        <a href="Medicina.html">Medicina</a>
+    </nav>
     <main>
         <h2>Mapa do Site</h2>
+        <p>Encontre rapidamente todas as páginas e seções importantes da Faculdade Exemplo:</p>
         <ul>
             <li><a href="SEO.html">Página Inicial</a></li>
             <li><a href="administracao.html">Administração</a></li>
@@ -79,10 +133,11 @@
             <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
             <li><a href="obrigado.html">Página de Obrigado</a></li>
         </ul>
-        <a href="SEO.html">Voltar para o site</a>
+        <a class="voltar" href="SEO.html">&larr; Voltar para o site</a>
     </main>
     <footer>
         <p>&copy; 2025 Faculdade Exemplo - Todos os direitos reservados</p>
+        <p>Endereço: Rua da Educação, 123 - Cidade Exemplo | Telefone: (00) 1234-5678</p>
     </footer>
 </body>
 
