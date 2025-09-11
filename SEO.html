@@ -144,8 +144,33 @@
                 <h3>Parceria Internacional</h3>
                 <p>Firmamos acordo com universidades estrangeiras para intercâmbio de alunos.</p>
             </article>
-            <!-- Comentário 7 (SEO): Notícias não possuem marcação estruturada (Schema.org) para artigos -->
+            <!-- Comentário 7 (SEO): Notícias não possuem dados estruturados (schema.org) para melhorar o destaque nos resultados de busca -->
         </section>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [{
+                    "@type": "NewsArticle",
+                    "headline": "Semana Acadêmica 2025",
+                    "datePublished": "2025-05-10",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Faculdade Exemplo"
+                    },
+                    "description": "A Faculdade Exemplo realizou sua tradicional Semana Acadêmica com palestras e workshops."
+                }, {
+                    "@type": "NewsArticle",
+                    "headline": "Parceria Internacional",
+                    "datePublished": "2025-06-01",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Faculdade Exemplo"
+                    },
+                    "description": "Firmamos acordo com universidades estrangeiras para intercâmbio de alunos."
+                }]
+            }
+        </script>
 
         <section id="depoimentos">
             <h2>Depoimentos</h2>
@@ -157,8 +182,37 @@
                 <p>"Professores qualificados e ótima estrutura. Recomendo a todos."</p>
                 <footer>- Aluna</footer>
             </blockquote>
-            <!-- Comentário 8 (SEO): Depoimentos não possuem dados estruturados (review schema) para melhorar destaque no Google -->
+            <!-- Comentário 8 (SEO): Depoimentos agora possuem dados estruturados (review schema) -->
         </section>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [{
+                    "@type": "Review",
+                    "reviewBody": "A Faculdade Exemplo mudou minha vida. Hoje atuo em uma grande empresa graças à formação recebida.",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Ex-Aluno"
+                    },
+                    "itemReviewed": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "Faculdade Exemplo"
+                    }
+                }, {
+                    "@type": "Review",
+                    "reviewBody": "Professores qualificados e ótima estrutura. Recomendo a todos.",
+                    "author": {
+                        "@type": "Person",
+                        "name": "Aluna"
+                    },
+                    "itemReviewed": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "Faculdade Exemplo"
+                    }
+                }]
+            }
+        </script>
 
         <section id="contato">
             <h2>Fale Conosco</h2>
