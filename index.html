@@ -264,7 +264,7 @@ mas são essenciais para buscadores, navegadores e o funcionamento do site. Alem
         <section id="contato">
             <!--formulario de contato simples com nome, email, mensagem e botão enviar-->
             <h2>Fale Conosco</h2>
-            <form action="obrigado.html" method="post">
+            <form id="contatoForm">
                 <label for="nome">Nome:</label><br>
                 <input type="text" id="nome" name="nome" required><br><br>
                 <label for="email">Email:</label><br>
@@ -274,6 +274,14 @@ mas são essenciais para buscadores, navegadores e o funcionamento do site. Alem
                 <input type="submit" value="Enviar">
             </form>
         </section>
+
+        <!--codigo em javascrpit pego com ia apenas para funcionamento do formulario pq vercel não aceita essa redireção estatica do "form"-->
+        <script>
+            document.getElementById("contatoForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+                window.location.href = "obrigado.html";
+            });
+        </script>
     </main>
 
     <footer>
