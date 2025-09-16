@@ -61,6 +61,51 @@ mas são essenciais para buscadores, navegadores e o funcionamento do site. Alem
             color: white;
             text-align: center;
         }
+        
+        @media (max-width: 768px) {
+            header,
+            nav,
+            main,
+            footer {
+                padding: 10px;
+            }
+            main {
+                padding: 10px 5px;
+            }
+            .banner {
+                height: 90px;
+                font-size: 1rem;
+            }
+            section {
+                padding: 10px;
+                margin: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+            ul {
+                padding-left: 18px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            h1,
+            h2,
+            h3 {
+                font-size: 1.2em;
+            }
+            .banner h2 {
+                font-size: 1em;
+            }
+            nav a {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
@@ -111,7 +156,7 @@ mas são essenciais para buscadores, navegadores e o funcionamento do site. Alem
         <section id="infraestrutura">
             <!--informações sobre a infraestrutura da faculdade exemplo-->
             <h2>Infraestrutura</h2>
-            <img src="Gemini_Generated_Image_cgudyucgudyucgud.png" alt="Foto do campus da Faculdade Exemplo, com bibliotecas, laboratorios modernos e áreas de convivência" width="200px">
+            <img src="campus-image.png" alt="Foto do campus da Faculdade Exemplo, com bibliotecas, laboratorios modernos e áreas de convivência" width="200px">
             <p>Nosso campus conta com biblioteca, laboratórios modernos e áreas de convivência.</p>
             <p>Estamos sempre investindo em tecnologia e inovação.</p>
         </section>

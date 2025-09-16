@@ -6,7 +6,7 @@
     <title>Política de Privacidade - Faculdade Exemplo</title>
     <meta name="description" content="Política de privacidade da Faculdade Exemplo. Saiba como tratamos seus dados.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="index.html">
+    <link rel="canonical" href="politica-privacidade.html">
     <style>
         body {
             margin: 0;
@@ -111,6 +111,51 @@
         footer li {
             color: white;
         }
+        
+        @media (max-width: 768px) {
+            header,
+            nav,
+            main,
+            footer {
+                padding: 10px;
+            }
+            main {
+                padding: 10px 5px;
+            }
+            .banner {
+                height: 90px;
+                font-size: 1rem;
+            }
+            section {
+                padding: 10px;
+                margin: 10px 0;
+            }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
+            ul {
+                padding-left: 18px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            h1,
+            h2,
+            h3 {
+                font-size: 1.2em;
+            }
+            .banner h2 {
+                font-size: 1em;
+            }
+            nav a {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 
@@ -119,7 +164,7 @@
         <h1>Faculdade Exemplo</h1>
         <p>Transformando conhecimento em futuro</p>
     </header>
-    <nav>
+    <nav aria-label="Navegação principal">
         <a href="index.html">Início</a>
         <a href="administracao.html">Administração</a>
         <a href="ciencia_computação.html">Ciência da Computação</a>
